@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="FV2-sA-zjQ">
-                    <rect key="frame" x="32" y="59" width="329" height="152"/>
+                    <rect key="frame" x="32" y="91" width="329" height="152"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4c-gJ-7sO">
                             <rect key="frame" x="0.0" y="0.0" width="329" height="40"/>
@@ -103,7 +103,7 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="FV2-sA-zjQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="8Rv-nT-TNv"/>
-                <constraint firstItem="FV2-sA-zjQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="MtS-uo-jqb"/>
+                <constraint firstItem="FV2-sA-zjQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="MtS-uo-jqb"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FV2-sA-zjQ" secondAttribute="trailing" constant="32" id="ZJ5-sH-BT0"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="FV2-sA-zjQ" secondAttribute="bottom" id="rDR-4l-eWO"/>
             </constraints>
