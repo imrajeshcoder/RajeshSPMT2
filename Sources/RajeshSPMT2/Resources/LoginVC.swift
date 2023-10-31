@@ -18,9 +18,9 @@ public class LoginVC: UIViewController {
     }
     
     public init() {
-        let bundle = Bundle(for: LoginVC.self)
-        let bundleId = bundle.bundleIdentifier
-        super.init(nibName: "LoginVC", bundle: bundle)
+       // let bundle = Bundle(for: LoginVC.self)
+      //  let bundleId = bundle.bundleIdentifier
+        super.init(nibName: "LoginVC", bundle: Bundle.module)
        // super.init(nibName: "LoginVC", bundle: Bundle(for: LoginVC.self))
     }
     
