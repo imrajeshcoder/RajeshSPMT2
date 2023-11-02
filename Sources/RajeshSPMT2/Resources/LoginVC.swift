@@ -6,10 +6,12 @@
 //
 
 import UIKit
-
+import SDWebImage
 
 public class LoginVC: UIViewController {
 
+    
+    @IBOutlet weak var imgTopImage: UIImageView!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -30,8 +32,8 @@ public class LoginVC: UIViewController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        guard let url = URL(string: "https://picsum.photos/200/300") else { return  }
+        imgTopImage.sd_setImage(with: url)
     }
 
 

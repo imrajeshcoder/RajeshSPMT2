@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModuleProvider="target">
             <connections>
                 <outlet property="emailTextField" destination="7Db-y4-c24" id="Qid-oR-gUM"/>
+                <outlet property="imgTopImage" destination="xqZ-Lq-Fzy" id="3Bs-Fo-qn1"/>
                 <outlet property="passwordTextField" destination="tmm-Fs-d20" id="DO2-as-v04"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -22,10 +23,28 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="FV2-sA-zjQ">
-                    <rect key="frame" x="32" y="91" width="329" height="152"/>
+                    <rect key="frame" x="32" y="91" width="329" height="296"/>
                     <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5m0-cZ-ZTX">
+                            <rect key="frame" x="0.0" y="0.0" width="329" height="128"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xqZ-Lq-Fzy">
+                                    <rect key="frame" x="0.0" y="0.0" width="329" height="128"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="128" id="NJu-cn-bxa"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="xqZ-Lq-Fzy" secondAttribute="bottom" id="Uoe-Tq-ss2"/>
+                                <constraint firstItem="xqZ-Lq-Fzy" firstAttribute="leading" secondItem="5m0-cZ-ZTX" secondAttribute="leading" id="VK2-lC-z2D"/>
+                                <constraint firstAttribute="trailing" secondItem="xqZ-Lq-Fzy" secondAttribute="trailing" id="nls-RG-mnz"/>
+                                <constraint firstItem="xqZ-Lq-Fzy" firstAttribute="top" secondItem="5m0-cZ-ZTX" secondAttribute="top" id="qJW-Ar-jxo"/>
+                            </constraints>
+                        </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4c-gJ-7sO">
-                            <rect key="frame" x="0.0" y="0.0" width="329" height="40"/>
+                            <rect key="frame" x="0.0" y="144" width="329" height="40"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="meo-tr-kHz">
                                     <rect key="frame" x="0.0" y="0.0" width="329" height="40"/>
@@ -56,7 +75,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oYo-FQ-dHf">
-                            <rect key="frame" x="0.0" y="56" width="329" height="40"/>
+                            <rect key="frame" x="0.0" y="200" width="329" height="40"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0NC-k7-g9F">
                                     <rect key="frame" x="0.0" y="0.0" width="329" height="40"/>
@@ -87,7 +106,7 @@
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYQ-Vb-zTa">
-                            <rect key="frame" x="0.0" y="112" width="329" height="40"/>
+                            <rect key="frame" x="0.0" y="256" width="329" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="HxV-w1-KPA"/>
                             </constraints>
